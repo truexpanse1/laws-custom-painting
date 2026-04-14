@@ -6,23 +6,42 @@
   <title>Terms of Service | Law&#8217;s Custom Painting &#8211; Yuba City, CA</title>
   <meta name="description" content="Terms of service for the Law&#8217;s Custom Painting website. Review the terms governing your use of our website and services.">
   <link rel="canonical" href="https://www.lawspainting.com/terms-of-service">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="navbar">
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
     <div class="container">
-      <a href="/" class="nav-logo">
-        <i class="fas fa-paint-roller"></i> LAW&#8217;S <span>PAINTING</span>
-      </a>
-      <div class="nav-cta">
+      <a href="/" class="nav-logo"><i class="fas fa-paint-roller"></i> LAW&#8217;S <span>PAINTING</span></a>
+      <div class="nav-links" id="navLinks">
+        <button class="nav-close" id="navClose"><i class="fas fa-times"></i></button>
+        <a href="/">Home</a>
+        <div class="nav-dropdown">
+          <a href="#">Services</a>
+          <div class="dropdown-menu">
+            <a href="/services/interior-painting.html">Interior Painting</a>
+            <a href="/services/exterior-painting.html">Exterior Painting</a>
+            <a href="/services/cabinet-refinishing.html">Cabinet Refinishing</a>
+            <a href="/services/commercial-painting.html">Commercial Painting</a>
+          </div>
+        </div>
+        <a href="/gallery.html">Gallery</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
         <a href="tel:+15306716763" class="nav-phone"><i class="fas fa-phone"></i> (530) 671-6763</a>
-        <a href="/" class="btn btn-secondary nav-btn">Back to Home</a>
+        <a href="/contact.html" class="btn btn-primary btn-sm">Get Free Estimate</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu"><span></span><span></span><span></span></button>
       </div>
     </div>
   </nav>
+  <div class="nav-overlay" id="navOverlay"></div>
 
   <!-- Terms of Service Content -->
   <section class="legal-page">
@@ -78,12 +97,18 @@
       <div class="footer__bottom">
         <p>&copy; 2026 Law&#8217;s Custom Painting, Inc. All rights reserved. | Built by <a href="https://truexpanse.com" target="_blank" rel="noopener noreferrer">TrueXpanse</a></p>
         <div class="footer__legal">
-          <a href="/privacy-policy">Privacy Policy</a>
-          <a href="/terms-of-service">Terms of Service</a>
+          <a href="/privacy-policy.html">Privacy Policy</a>
+          <a href="/terms-of-service.html">Terms of Service</a>
         </div>
       </div>
     </div>
   </footer>
+
+  <script>
+    const navToggle=document.getElementById('navToggle'),navClose=document.getElementById('navClose'),navLinks=document.getElementById('navLinks'),navOverlay=document.getElementById('navOverlay');
+    function openNav(){navLinks.classList.add('open');navOverlay.classList.add('active');}function closeNav(){navLinks.classList.remove('open');navOverlay.classList.remove('active');}
+    navToggle.addEventListener('click',openNav);navClose.addEventListener('click',closeNav);navOverlay.addEventListener('click',closeNav);
+  </script>
 
 </body>
 </html>
