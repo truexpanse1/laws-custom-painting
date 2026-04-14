@@ -1459,6 +1459,535 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ============================================
+   HERO ENHANCEMENTS (Sabri Suby)
+   ============================================ */
+.hero__pain {
+  font-size: 1.15rem;
+  color: var(--gray-300);
+  margin-bottom: 16px;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.hero__urgency {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 10px 20px;
+  color: var(--secondary-accent);
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.hero__guarantee {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--gray-400);
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.hero__guarantee i {
+  color: #22c55e;
+  font-size: 1.2rem;
+}
+
+/* ============================================
+   DREAM OUTCOME SECTION
+   ============================================ */
+.dream-outcome {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.dream-outcome__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  margin: 50px 0 40px;
+}
+
+.dream-outcome__item {
+  text-align: center;
+  padding: 30px;
+}
+
+.dream-outcome__icon {
+  width: 70px;
+  height: 70px;
+  background: rgba(59, 130, 246, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.dream-outcome__icon i {
+  font-size: 1.5rem;
+  color: var(--primary-accent);
+}
+
+.dream-outcome__item p {
+  color: var(--gray-600);
+  font-size: 1rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+/* ============================================
+   PAINTING NIGHTMARES (Agitate)
+   ============================================ */
+.nightmares {
+  padding: 100px 0;
+  background: var(--primary-dark);
+}
+
+.nightmares .section-heading {
+  color: var(--white);
+}
+
+.nightmares__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin: 50px 0 40px;
+}
+
+.nightmares__item {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 32px;
+  text-align: left;
+}
+
+.nightmares__icon {
+  width: 50px;
+  height: 50px;
+  background: rgba(239, 68, 68, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.nightmares__icon i {
+  font-size: 1.2rem;
+  color: #ef4444;
+}
+
+.nightmares__item h3 {
+  font-size: 1.15rem;
+  color: var(--white);
+  margin-bottom: 10px;
+}
+
+.nightmares__item p {
+  color: var(--gray-400);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.nightmares__closer {
+  color: var(--gray-300);
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.8;
+}
+
+.nightmares__closer strong {
+  color: var(--secondary-accent);
+}
+
+/* ============================================
+   TRUST BADGES
+   ============================================ */
+.trust-badges {
+  padding: 40px 0;
+  background: var(--bg-light);
+  border-top: 1px solid var(--gray-200);
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.trust-badges__label {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gray-500);
+  margin-bottom: 24px;
+}
+
+.trust-badges__grid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.trust-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1px solid var(--gray-300);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.trust-badge i {
+  color: var(--primary-accent);
+  font-size: 1rem;
+}
+
+/* ============================================
+   QUALIFIER (Who This Is For / Not For)
+   ============================================ */
+.qualifier {
+  padding: 100px 0;
+  background: var(--bg-light);
+}
+
+.qualifier__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.qualifier__for,
+.qualifier__not-for {
+  padding: 40px;
+  border: 2px solid var(--gray-200);
+}
+
+.qualifier__for {
+  border-color: var(--primary-accent);
+  background: var(--white);
+}
+
+.qualifier__not-for {
+  background: var(--white);
+  border-color: var(--gray-300);
+}
+
+.qualifier__for h2,
+.qualifier__not-for h2 {
+  font-size: 1.5rem;
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qualifier__for h2 {
+  color: var(--primary-accent);
+}
+
+.qualifier__for h2 i {
+  color: var(--primary-accent);
+}
+
+.qualifier__not-for h2 {
+  color: #ef4444;
+}
+
+.qualifier__not-for h2 i {
+  color: #ef4444;
+}
+
+.qualifier__for ul,
+.qualifier__not-for ul {
+  list-style: none;
+  padding: 0;
+}
+
+.qualifier__for ul li,
+.qualifier__not-for ul li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 0.95rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.qualifier__for ul li i {
+  color: var(--primary-accent);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.qualifier__not-for ul li i {
+  color: #ef4444;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.qualifier__note {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--gray-200);
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  line-height: 1.7;
+}
+
+.qualifier__note strong {
+  color: var(--primary-dark);
+}
+
+/* ============================================
+   GUARANTEE SECTION (Godfather Offer)
+   ============================================ */
+.guarantee {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+.guarantee .section-heading {
+  color: var(--white);
+}
+
+.guarantee__badge {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--secondary-accent), #d97706);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 30px;
+  box-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+}
+
+.guarantee__badge i {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.guarantee__text {
+  font-size: 1.25rem;
+  color: var(--gray-200);
+  max-width: 700px;
+  margin: 0 auto 16px;
+  line-height: 1.8;
+}
+
+.guarantee__text strong {
+  color: var(--secondary-accent);
+  font-size: 1.3rem;
+}
+
+.guarantee__subtext {
+  font-size: 1rem;
+  color: var(--gray-400);
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+.guarantee__points {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.guarantee__point {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--gray-300);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.guarantee__point i {
+  color: #22c55e;
+}
+
+/* ============================================
+   TESTIMONIALS ENHANCEMENTS
+   ============================================ */
+.testimonials__google-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 10px 24px;
+  margin-bottom: 16px;
+  color: var(--secondary-accent);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.testimonials__google-badge i {
+  font-size: 0.9rem;
+}
+
+.testimonials__counter {
+  margin-top: 40px;
+  color: var(--gray-300);
+  font-size: 1.1rem;
+}
+
+.testimonials__counter i {
+  color: var(--primary-accent);
+  margin-right: 8px;
+}
+
+.testimonials__counter strong {
+  color: var(--secondary-accent);
+}
+
+/* ============================================
+   URGENCY & SCARCITY
+   ============================================ */
+.urgency {
+  padding: 100px 0;
+  background: var(--white);
+}
+
+.urgency__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 50px 0 40px;
+}
+
+.urgency__item {
+  text-align: center;
+  padding: 32px 24px;
+  border: 1px solid var(--gray-200);
+  background: var(--bg-light);
+}
+
+.urgency__icon {
+  width: 60px;
+  height: 60px;
+  background: rgba(245, 158, 11, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+}
+
+.urgency__icon i {
+  font-size: 1.4rem;
+  color: var(--secondary-accent);
+}
+
+.urgency__item h3 {
+  font-size: 1.15rem;
+  color: var(--primary-dark);
+  margin-bottom: 10px;
+}
+
+.urgency__item p {
+  color: var(--gray-500);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* ============================================
+   CONTACT ENHANCEMENTS
+   ============================================ */
+.contact__urgency-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  background: rgba(245, 158, 11, 0.08);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 16px 20px;
+  margin-bottom: 30px;
+  font-size: 0.9rem;
+  color: var(--gray-700);
+  line-height: 1.6;
+}
+
+.contact__urgency-box i {
+  color: var(--secondary-accent);
+  font-size: 1.2rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.contact__urgency-box strong {
+  color: var(--primary-dark);
+}
+
+.form-guarantee {
+  margin-top: 12px;
+  font-size: 0.8rem;
+  color: var(--gray-500);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.form-guarantee i {
+  color: #22c55e;
+}
+
+/* ============================================
+   STICKY MOBILE CTA BAR
+   ============================================ */
+.sticky-cta-mobile {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+  background: var(--primary-dark);
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.sticky-cta-mobile__phone,
+.sticky-cta-mobile__book {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.sticky-cta-mobile__phone {
+  background: var(--primary-dark);
+  color: var(--white);
+  width: 40%;
+}
+
+.sticky-cta-mobile__book {
+  background: var(--secondary-accent);
+  color: var(--primary-dark);
+  width: 60%;
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 1024px) {
@@ -1496,6 +2025,18 @@ h1, h2, h3, h4, h5, h6 {
 
   .why-us__grid {
     gap: 20px;
+  }
+
+  .dream-outcome__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nightmares__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .urgency__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -1578,6 +2119,63 @@ h1, h2, h3, h4, h5, h6 {
   .hero__trust {
     flex-direction: column;
     gap: 12px;
+  }
+
+  .hero__urgency {
+    font-size: 0.8rem;
+    padding: 8px 14px;
+  }
+
+  .dream-outcome__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .nightmares__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qualifier__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .qualifier__for,
+  .qualifier__not-for {
+    padding: 28px;
+  }
+
+  .urgency__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .trust-badges__grid {
+    gap: 12px;
+  }
+
+  .trust-badge {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+  }
+
+  .guarantee__badge {
+    width: 80px;
+    height: 80px;
+  }
+
+  .guarantee__badge i {
+    font-size: 2rem;
+  }
+
+  .guarantee__text {
+    font-size: 1.1rem;
+  }
+
+  .sticky-cta-mobile {
+    display: flex;
+  }
+
+  /* Add bottom padding to body so sticky bar doesn't cover content */
+  body {
+    padding-bottom: 52px;
   }
 
   .stats-bar .container {
@@ -1686,5 +2284,16 @@ h1, h2, h3, h4, h5, h6 {
 
   .stats-bar .container {
     grid-template-columns: 1fr;
+  }
+
+  .guarantee__points {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .qualifier__for h2,
+  .qualifier__not-for h2 {
+    font-size: 1.25rem;
   }
 }
